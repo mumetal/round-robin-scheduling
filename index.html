@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvio</title>
+    <style type="text/css">
+        @font-face {
+            font-family:'fontawesome';
+            src: url(fonts/fontawesome-webfont.ttf)
+        }
+        canvas {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <button style="margin: 15px" class='btn btn-primary btn-sm' id="control">
+                    <span class="fa fa-play"></span>
+                </button>
+            </div>
+            <div class="col-md-3">
+                <label for="quantum">Quantum:</label>
+                <input id="quantumInput" name="quantum"placeholder="quantum" class='form-control' type="number">
+                <button class='btn btn-primary btn-sm' id="quantumBtn">
+                    <span class="fa fa-bug"></span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <canvas></canvas>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="./js/robin.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/canv.js"></script>
+</body>
+</html>
